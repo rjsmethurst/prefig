@@ -31,16 +31,11 @@ class Prefig(plt.Figure):
         self.fontcol = fontcol
         self.size = size
         self.font = font
-        if axcol='white' or 'w':
+        
+        if axcol == 'w':
             col = colorConverter.to_rgba_array(plt.rcParams['axes.color_cycle'])[:,:-1]
             inv_col = (256-(256*col))/256.0
-            plt.rc('axes', color_cycle = inv_col)
-        #access all colours called in plt functions
-        #convert to rgb string
-        #invert rgb string
-        #set colours to inverted rgb string
-        #change colour cycle for defaults to inverses 
-        
+            plt.rc('axes', color_cycle = list(inv_col))
         
         plt.rc('figure', figsize=size, facecolor='none', edgecolor='none')
         plt.rc('savefig', dpi=300, facecolor='none', edgecolor='none', frameon='False')
@@ -50,7 +45,9 @@ class Prefig(plt.Figure):
         plt.rc('axes', labelsize='x-large', edgecolor=axcol, labelcolor=fontcol, facecolor='none')
         plt.rc('xtick', labelsize='large', color=fontcol)
         plt.rc('ytick', labelsize='large', color=fontcol)
-        plt.rc('lines', markersize=10, linewidth=2)
+        plt.rc('lines', markersize=8, linewidth=2)
+
+
         
 
 

@@ -7,14 +7,18 @@ m, c = 1.5, -3
 y = m*x + c + np.random.normal(0,0.5,50)
 yerr = np.random.normal(0,0.1,50)
 
-plt.figure()
+Prefig()
 plt.errorbar(x,y, yerr, xerr=None, fmt=' ', marker='D')
-plt.xlabel('measured')
-plt.ylabel('observed')
-plt.savefig('test_orig.png')
-
-Prefig(axcol='w', fontcol='w')
-plt.errorbar(x,y, yerr, xerr=None, fmt=' ', marker='D')
+plt.plot(x, (m*x+c))
 plt.xlabel('measured')
 plt.ylabel('observed')
 plt.savefig('test_prefig.png')
+
+#plt.figure()
+#plt.errorbar(x,y, yerr, xerr=None, fmt=' ', marker='D')
+#plt.plot(x, (m*x+c))
+#plt.xlabel('measured')
+#plt.ylabel('observed')
+#plt.savefig('test_orig.png')
+
+
