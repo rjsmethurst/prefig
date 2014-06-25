@@ -31,13 +31,14 @@ class Prefig(plt.Figure):
         self.size = size
         self.font = font
         
-        #if axcol='white' or 'w':
+            #if axcol='white' or 'w':
+        #plt.rc('axes', color_cycle = )
         #access all colours called in plt functions
         #convert to rgb string
         #invert rgb string
         #set colours to inverted rgb string
+        #change colour cycle for defaults to inverses 
         
-        #
         
         plt.rc('figure', figsize=size, facecolor='none', edgecolor='none')
         plt.rc('savefig', dpi=300, facecolor='none', edgecolor='none', frameon='False')
