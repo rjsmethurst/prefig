@@ -8,6 +8,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.colors import colorConverter
 
 class Prefig(plt.Figure):
     """
@@ -30,9 +31,10 @@ class Prefig(plt.Figure):
         self.fontcol = fontcol
         self.size = size
         self.font = font
-        
-            #if axcol='white' or 'w':
-        #plt.rc('axes', color_cycle = )
+        if axcol='white' or 'w':
+            col = colorConverter.to_rgba_array(plt.rcParams['axes.color_cycle'])[:,:-1]
+            inv_col = (256-(256*col))/256.0
+            plt.rc('axes', color_cycle = inv_col)
         #access all colours called in plt functions
         #convert to rgb string
         #invert rgb string
