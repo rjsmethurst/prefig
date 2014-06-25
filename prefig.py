@@ -12,7 +12,7 @@ from matplotlib.colors import colorConverter
 
 class Prefig(plt.Figure):
     """
-        A class that can replace the 'plt.figure' python plotting command to create poster and presentaiton ready plots instantly. Plots will be initialised with a transparent background. The font colour and axes colour must be specified - e.g. 'white' for a black background poster. Font sizes will be increased in proportion to the figure size specified. 
+        A class that can replace the 'plt.figure' python plotting command to create poster and presentaiton ready plots instantly. Plots will be initialised with a transparent background. The font colour and axes colour must be specified - e.g. 'white' for a black background poster. Colours are inverted if 'white' is specified as the colour. Size of fonts changed appropriately according to figure size specified. 
         
         :axcol:
             The colour of the axes of the plot (optional). Default is 'black' or 'k'.
