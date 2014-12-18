@@ -4,30 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Prefig by rjsmethurst</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/rjsmethurst/prefig">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/rjsmethurst/prefig/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/rjsmethurst/prefig/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>Prefig</h1>
-        <p>An awesome plotting object to make any plot poster or presentation ready in the colours of your choice!</p>
 
-        <p class="view"><a href="https://github.com/rjsmethurst/prefig">View the Project on GitHub <small>rjsmethurst/prefig</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/rjsmethurst/prefig/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/rjsmethurst/prefig/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/rjsmethurst/prefig">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
       <section>
+        <div id="title">
+          <h1>Prefig</h1>
+          <p>An awesome plotting object to make any plot poster or presentation ready in the colours of your choice!</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/rjsmethurst">rjsmethurst</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
         <p><strong>Ever been disgusted at seeing a white plot on a black background?</strong></p>
 
 <p><strong>How about a tiny plot blown up to the size of a presentation slide so that it's blurry and unreadable?</strong></p>
@@ -53,8 +63,6 @@ plt.ylabel('observed')
 </code></pre>
 
 <p>With the matplotlib defaults, that looks something like this on a presentation slide:</p>
-
-<p><img src="https://www.dropbox.com/s/u9pbb8fj7xhx3qh/Screen%20Shot%202014-12-18%20at%2012.36.41.png?dl=0" alt="default.png"></p>
 
 <p><img src="https://www.dropbox.com/s/u9pbb8fj7xhx3qh/Screen%20Shot%202014-12-18%20at%2012.36.41.png?dl=0" alt="hi"></p>
 
@@ -82,12 +90,9 @@ plt.ylabel('observed')
     - everyone, everywhere. </p>
 </blockquote>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/rjsmethurst">rjsmethurst</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
