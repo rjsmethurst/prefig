@@ -159,8 +159,8 @@ p img {
 
 pre, code {
   width: 100%;
-  color: #222;
-  background-color: #fff;
+  color: white;
+  background-color: gray;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
@@ -355,7 +355,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: black;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
