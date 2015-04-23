@@ -1,6 +1,6 @@
 prefig
 ======
-Version 0.0.1
+Version 1.0.0
 
 An awesome plotting object to make any plot poster or presentation ready in the colours of your choice! 
 
