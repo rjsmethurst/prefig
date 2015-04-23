@@ -4,11 +4,8 @@ from setuptools import setup
 
 setup(
     name="prefig",
-    version="0.1",
-    author="Becky Smethurst",
+    version="1.0.0",
+    author="RJ Smethurst",
     py_modules=['prefig'],
-    #entry_points = {
-     #   'console_scripts': ['prefig = prefig:Prefig']
-     #   }
     scripts=['prefig.py']
       )
