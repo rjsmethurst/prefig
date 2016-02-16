@@ -14,11 +14,11 @@ plt.xlabel('measured')
 plt.ylabel('observed')
 plt.savefig('test_prefig.png')
 
-#plt.figure()
-#plt.errorbar(x,y, yerr, xerr=None, fmt=' ', marker='D')
-#plt.plot(x, (m*x+c))
-#plt.xlabel('measured')
-#plt.ylabel('observed')
-#plt.savefig('test_orig.png')
+plt.figure()
+plt.errorbar(x,y, yerr, xerr=None, fmt=' ', marker='D')
+plt.plot(x, (m*x+c))
+plt.xlabel('measured')
+plt.ylabel('observed')
+plt.savefig('test_orig.png')
 
 
