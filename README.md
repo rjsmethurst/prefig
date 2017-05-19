@@ -28,3 +28,6 @@ A class that can replace the `plt.figure()` matplotlib python plotting command t
 Run the program test.py to see how the changing the class of the figure to Prefig() alters the simple error bar plot. 
 
 
+License 
+======
+Apache 2.0
